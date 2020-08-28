@@ -10,9 +10,13 @@ import UIKit
 
 public class RedViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     public override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
     }
 
+    public static func instanceFromStoryBoard() -> RedViewController {
+       let viewController = UIStoryboard(name: "Red", bundle: Bundle(identifier: "vitor.RedModule")).instantiateViewController(withIdentifier: "RedViewController") as! RedViewController
+       return viewController
+    }
 }

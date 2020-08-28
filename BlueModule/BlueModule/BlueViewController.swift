@@ -10,9 +10,13 @@ import UIKit
 
 public class BlueViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     public override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.blue
     }
 
+    public static func instanceFromStoryBoard() -> BlueViewController {
+       let viewController = UIStoryboard(name: "Blue", bundle:  Bundle(identifier: "vitor.BlueModule")).instantiateViewController(withIdentifier: "BlueViewController") as! BlueViewController
+       return viewController
+    }
 }

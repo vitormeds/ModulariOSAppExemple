@@ -10,18 +10,20 @@ import UIKit
 import BlueModule
 import RedModule
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func redAction(_ sender: Any) {
-         present(RedViewController(), animated: true, completion: nil)
+        let vc = RedViewController.instanceFromStoryBoard()
+        present(vc, animated: true, completion: nil)
     }
     
     @IBAction func blueAction(_ sender: Any) {
-         present(BlueViewController(), animated: true, completion: nil)
+        let vc = BlueViewController.instanceFromStoryBoard()
+         present(vc, animated: true, completion: nil)
     }
     
 }

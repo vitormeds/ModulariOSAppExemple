@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		72028842A773504D2DB34542 /* Pods_BlueModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79637B05E9B49BEF4FEDD21D /* Pods_BlueModule.framework */; };
 		F403711924F97D4000659BB4 /* BlueStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = F403711824F97D4000659BB4 /* BlueStrings.strings */; };
+		F456897D24F9A9890075D9DD /* Blue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F456897C24F9A9890075D9DD /* Blue.storyboard */; };
 		F471177824F85265000A2162 /* BlueModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471176E24F85260000A2162 /* BlueModule.framework */; };
 		F471177D24F85265000A2162 /* BlueModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F471177C24F85265000A2162 /* BlueModuleTests.swift */; };
 		F471177F24F85266000A2162 /* BlueModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F471177124F85260000A2162 /* BlueModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +31,7 @@
 		79637B05E9B49BEF4FEDD21D /* Pods_BlueModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B094D086701948C2C4D07A0F /* Pods-BlueModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueModule.release.xcconfig"; path = "Target Support Files/Pods-BlueModule/Pods-BlueModule.release.xcconfig"; sourceTree = "<group>"; };
 		F403711824F97D4000659BB4 /* BlueStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BlueStrings.strings; sourceTree = "<group>"; };
+		F456897C24F9A9890075D9DD /* Blue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Blue.storyboard; sourceTree = "<group>"; };
 		F471176E24F85260000A2162 /* BlueModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471177124F85260000A2162 /* BlueModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueModule.h; sourceTree = "<group>"; };
 		F471177224F85260000A2162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		F471177024F85260000A2162 /* BlueModule */ = {
 			isa = PBXGroup;
 			children = (
+				F456897C24F9A9890075D9DD /* Blue.storyboard */,
 				F471177124F85260000A2162 /* BlueModule.h */,
 				F471177224F85260000A2162 /* Info.plist */,
 				F47117B524F85464000A2162 /* BlueViewController.swift */,
@@ -211,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F456897D24F9A9890075D9DD /* Blue.storyboard in Resources */,
 				F403711924F97D4000659BB4 /* BlueStrings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
