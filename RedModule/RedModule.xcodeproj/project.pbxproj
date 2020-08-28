@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9BC11AA389143B993A078E4C /* Pods_RedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD088395D2CE46F982FBAC0 /* Pods_RedModule.framework */; };
+		F403711724F97D3100659BB4 /* RedStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = F403711624F97D3100659BB4 /* RedStrings.strings */; };
 		F471179C24F852AB000A2162 /* RedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471179224F852AB000A2162 /* RedModule.framework */; };
 		F47117A124F852AB000A2162 /* RedModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47117A024F852AB000A2162 /* RedModuleTests.swift */; };
 		F47117A324F852AB000A2162 /* RedModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F471179524F852AB000A2162 /* RedModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F47117B424F8543E000A2162 /* RedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47117B324F8543E000A2162 /* RedController.swift */; };
+		F47117B424F8543E000A2162 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47117B324F8543E000A2162 /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +28,14 @@
 /* Begin PBXFileReference section */
 		2CD088395D2CE46F982FBAC0 /* Pods_RedModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EFF757E8D026C776D7447D /* Pods-RedModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedModule.release.xcconfig"; path = "Target Support Files/Pods-RedModule/Pods-RedModule.release.xcconfig"; sourceTree = "<group>"; };
+		F403711624F97D3100659BB4 /* RedStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = RedStrings.strings; sourceTree = "<group>"; };
 		F471179224F852AB000A2162 /* RedModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471179524F852AB000A2162 /* RedModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedModule.h; sourceTree = "<group>"; };
 		F471179624F852AB000A2162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F471179B24F852AB000A2162 /* RedModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47117A024F852AB000A2162 /* RedModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedModuleTests.swift; sourceTree = "<group>"; };
 		F47117A224F852AB000A2162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F47117B324F8543E000A2162 /* RedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedController.swift; sourceTree = "<group>"; };
+		F47117B324F8543E000A2162 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		FE0B49AA7380604E2BF158CB /* Pods-RedModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedModule.debug.xcconfig"; path = "Target Support Files/Pods-RedModule/Pods-RedModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +102,8 @@
 			children = (
 				F471179524F852AB000A2162 /* RedModule.h */,
 				F471179624F852AB000A2162 /* Info.plist */,
-				F47117B324F8543E000A2162 /* RedController.swift */,
+				F47117B324F8543E000A2162 /* RedViewController.swift */,
+				F403711624F97D3100659BB4 /* RedStrings.strings */,
 			);
 			path = RedModule;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F403711724F97D3100659BB4 /* RedStrings.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47117B424F8543E000A2162 /* RedController.swift in Sources */,
+				F47117B424F8543E000A2162 /* RedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,8 @@
+/* 
+  BaseStrings.strings
+  ModuleTest
+
+  Created by vitor.mendes on 28/08/20.
+  Copyright © 2020 Vitor Mendes. All rights reserved.
+*/
+"module" = "Mudule";

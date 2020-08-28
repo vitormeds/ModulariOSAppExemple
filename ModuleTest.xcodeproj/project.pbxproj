@@ -10,6 +10,7 @@
 		3860C4485235AB2C9DE7DD57 /* Pods_ModuleTest_ModuleTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438B8C398B417894240DDDAC /* Pods_ModuleTest_ModuleTestUITests.framework */; };
 		6E1DF46F05AA12F135C3D769 /* Pods_ModuleTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D189BE5D310DF0743F6FB5B /* Pods_ModuleTestTests.framework */; };
 		74C22D2EB86D1C0BE89DB535 /* Pods_ModuleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E202C676DCF72C2AC1377AA /* Pods_ModuleTest.framework */; };
+		F403711B24F97D5400659BB4 /* BaseStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = F403711A24F97D5400659BB4 /* BaseStrings.strings */; };
 		F47117AD24F85404000A2162 /* BlueModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47117AC24F85404000A2162 /* BlueModule.framework */; };
 		F47117AE24F85404000A2162 /* BlueModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47117AC24F85404000A2162 /* BlueModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47117B124F85409000A2162 /* RedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47117B024F85409000A2162 /* RedModule.framework */; };
@@ -66,6 +67,7 @@
 		4DC254479E23CC1F804C8ADC /* Pods-ModuleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTest.release.xcconfig"; path = "Target Support Files/Pods-ModuleTest/Pods-ModuleTest.release.xcconfig"; sourceTree = "<group>"; };
 		B44AD87ED7E6E163B7B5B39B /* Pods-ModuleTest-ModuleTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTest-ModuleTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ModuleTest-ModuleTestUITests/Pods-ModuleTest-ModuleTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B891F0F10BB157580B5ADCE6 /* Pods-ModuleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ModuleTestTests/Pods-ModuleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F403711A24F97D5400659BB4 /* BaseStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BaseStrings.strings; sourceTree = "<group>"; };
 		F47117AC24F85404000A2162 /* BlueModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47117B024F85409000A2162 /* RedModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F0800824F8512F0022DC01 /* ModuleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 				F4F0801924F851370022DC01 /* LaunchScreen.storyboard */,
 				F4F0801C24F851370022DC01 /* Info.plist */,
 				F4F0801424F8512F0022DC01 /* ModuleTest.xcdatamodeld */,
+				F403711A24F97D5400659BB4 /* BaseStrings.strings */,
 			);
 			path = ModuleTest;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F403711B24F97D5400659BB4 /* BaseStrings.strings in Resources */,
 				F4F0801B24F851370022DC01 /* LaunchScreen.storyboard in Resources */,
 				F4F0801824F851370022DC01 /* Assets.xcassets in Resources */,
 				F4F0801324F8512F0022DC01 /* Main.storyboard in Resources */,
