@@ -12,8 +12,11 @@ import RedModule
 
 public class ViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.text = R.string.baseStrings.module()
     }
     
     @IBAction func redAction(_ sender: Any) {

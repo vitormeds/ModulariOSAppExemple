@@ -15,6 +15,7 @@
 		F47117AE24F85404000A2162 /* BlueModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47117AC24F85404000A2162 /* BlueModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F47117B124F85409000A2162 /* RedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47117B024F85409000A2162 /* RedModule.framework */; };
 		F47117B224F85409000A2162 /* RedModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F47117B024F85409000A2162 /* RedModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F480460C24FE7B98006CB5E2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F480460B24FE7B97006CB5E2 /* R.generated.swift */; };
 		F4F0800C24F8512F0022DC01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0800B24F8512F0022DC01 /* AppDelegate.swift */; };
 		F4F0800E24F8512F0022DC01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0800D24F8512F0022DC01 /* SceneDelegate.swift */; };
 		F4F0801024F8512F0022DC01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F0800F24F8512F0022DC01 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 		F403711A24F97D5400659BB4 /* BaseStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BaseStrings.strings; sourceTree = "<group>"; };
 		F47117AC24F85404000A2162 /* BlueModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BlueModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47117B024F85409000A2162 /* RedModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F480460B24FE7B97006CB5E2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F4F0800824F8512F0022DC01 /* ModuleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F0800B24F8512F0022DC01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F0800D24F8512F0022DC01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		F4F0800A24F8512F0022DC01 /* ModuleTest */ = {
 			isa = PBXGroup;
 			children = (
+				F480460B24FE7B97006CB5E2 /* R.generated.swift */,
 				F4F0800B24F8512F0022DC01 /* AppDelegate.swift */,
 				F4F0800D24F8512F0022DC01 /* SceneDelegate.swift */,
 				F4F0800F24F8512F0022DC01 /* ViewController.swift */,
@@ -207,6 +210,7 @@
 			buildConfigurationList = F4F0803524F851390022DC01 /* Build configuration list for PBXNativeTarget "ModuleTest" */;
 			buildPhases = (
 				4B65761277A6D84739D7C04F /* [CP] Check Pods Manifest.lock */,
+				F47C0EB024FE7A8700924E7A /* RSwift */,
 				F4F0800424F8512F0022DC01 /* Sources */,
 				F4F0800524F8512F0022DC01 /* Frameworks */,
 				F4F0800624F8512F0022DC01 /* Resources */,
@@ -433,6 +437,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F47C0EB024FE7A8700924E7A /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -442,6 +466,7 @@
 			files = (
 				F4F0801024F8512F0022DC01 /* ViewController.swift in Sources */,
 				F4F0801624F8512F0022DC01 /* ModuleTest.xcdatamodeld in Sources */,
+				F480460C24FE7B98006CB5E2 /* R.generated.swift in Sources */,
 				F4F0800C24F8512F0022DC01 /* AppDelegate.swift in Sources */,
 				F4F0800E24F8512F0022DC01 /* SceneDelegate.swift in Sources */,
 			);

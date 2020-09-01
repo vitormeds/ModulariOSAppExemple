@@ -44,14 +44,26 @@
                                     <constraint firstAttribute="height" constant="80" id="nnr-3B-mJj"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOt-lz-UaR">
+                                <rect key="frame" x="32" y="76" width="350" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zOt-lz-UaR" secondAttribute="trailing" constant="32" id="19k-C3-kxu"/>
                             <constraint firstItem="W48-tg-Usu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ugn-DL-Pkm"/>
+                            <constraint firstItem="zOt-lz-UaR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="Zwi-oq-OYa"/>
                             <constraint firstItem="W48-tg-Usu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mI5-tb-mOL"/>
+                            <constraint firstItem="zOt-lz-UaR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="xKt-69-bGs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="zOt-lz-UaR" id="DKJ-ui-vad"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
