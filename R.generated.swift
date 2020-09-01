@@ -8,7 +8,7 @@ import Rswift
 import UIKit
 
 /// This `R` struct is generated and contains references to static resources.
-struct R: Rswift.Validatable {
+public struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap { Locale(identifier: $0) } ?? Locale.current
   fileprivate static let hostingBundle = Bundle(for: R.Class.self)
 
@@ -84,28 +84,28 @@ struct R: Rswift.Validatable {
     return dict?[key] as? String
   }
 
-  static func validate() throws {
+  public static func validate() throws {
     try intern.validate()
   }
 
   #if os(iOS) || os(tvOS)
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
-  struct storyboard {
+  public struct storyboard {
     /// Storyboard `LaunchScreen`.
-    static let launchScreen = _R.storyboard.launchScreen()
+    public static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
-    static let main = _R.storyboard.main()
+    public static let main = _R.storyboard.main()
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
-    static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
+    public static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
     }
     #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "Main", bundle: ...)`
-    static func main(_: Void = ()) -> UIKit.UIStoryboard {
+    public static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
     }
     #endif
@@ -115,20 +115,20 @@ struct R: Rswift.Validatable {
   #endif
 
   /// This `R.info` struct is generated, and contains static references to 1 properties.
-  struct info {
-    struct uiApplicationSceneManifest {
-      static let _key = "UIApplicationSceneManifest"
-      static let uiApplicationSupportsMultipleScenes = false
+  public struct info {
+    public struct uiApplicationSceneManifest {
+      public static let _key = "UIApplicationSceneManifest"
+      public static let uiApplicationSupportsMultipleScenes = false
 
-      struct uiSceneConfigurations {
-        static let _key = "UISceneConfigurations"
+      public struct uiSceneConfigurations {
+        public static let _key = "UISceneConfigurations"
 
-        struct uiWindowSceneSessionRoleApplication {
-          struct defaultConfiguration {
-            static let _key = "Default Configuration"
-            static let uiSceneConfigurationName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneConfigurationName") ?? "Default Configuration"
-            static let uiSceneDelegateClassName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneDelegateClassName") ?? "$(PRODUCT_MODULE_NAME).SceneDelegate"
-            static let uiSceneStoryboardFile = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneStoryboardFile") ?? "Main"
+        public struct uiWindowSceneSessionRoleApplication {
+          public struct defaultConfiguration {
+            public static let _key = "Default Configuration"
+            public static let uiSceneConfigurationName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneConfigurationName") ?? "Default Configuration"
+            public static let uiSceneDelegateClassName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneDelegateClassName") ?? "$(PRODUCT_MODULE_NAME).SceneDelegate"
+            public static let uiSceneStoryboardFile = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneStoryboardFile") ?? "Main"
 
             fileprivate init() {}
           }
@@ -146,14 +146,14 @@ struct R: Rswift.Validatable {
   }
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
-  struct string {
+  public struct string {
     /// This `R.string.baseStrings` struct is generated, and contains static references to 1 localization keys.
-    struct baseStrings {
+    public struct baseStrings {
       /// Value: Mudule
-      static let module = Rswift.StringResource(key: "module", tableName: "BaseStrings", bundle: R.hostingBundle, locales: [], comment: nil)
+      public static let module = Rswift.StringResource(key: "module", tableName: "BaseStrings", bundle: R.hostingBundle, locales: [], comment: nil)
 
       /// Value: Mudule
-      static func module(preferredLanguages: [String]? = nil) -> String {
+      public static func module(preferredLanguages: [String]? = nil) -> String {
         guard let preferredLanguages = preferredLanguages else {
           return NSLocalizedString("module", tableName: "BaseStrings", bundle: hostingBundle, comment: "")
         }
@@ -184,16 +184,16 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R: Rswift.Validatable {
-  static func validate() throws {
+public struct _R: Rswift.Validatable {
+  public static func validate() throws {
     #if os(iOS) || os(tvOS)
     try storyboard.validate()
     #endif
   }
 
   #if os(iOS) || os(tvOS)
-  struct storyboard: Rswift.Validatable {
-    static func validate() throws {
+  public struct storyboard: Rswift.Validatable {
+    public static func validate() throws {
       #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
@@ -203,13 +203,13 @@ struct _R: Rswift.Validatable {
     }
 
     #if os(iOS) || os(tvOS)
-    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UIKit.UIViewController
+    public struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      public typealias InitialController = UIKit.UIViewController
 
-      let bundle = R.hostingBundle
-      let name = "LaunchScreen"
+      public let bundle = R.hostingBundle
+      public let name = "LaunchScreen"
 
-      static func validate() throws {
+      public static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }
@@ -219,18 +219,18 @@ struct _R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+    public struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      public typealias InitialController = ViewController
 
-      let bundle = R.hostingBundle
-      let name = "Main"
-      let viewController = StoryboardViewControllerResource<ViewController>(identifier: "ViewController")
+      public let bundle = R.hostingBundle
+      public let name = "Main"
+      public let viewController = StoryboardViewControllerResource<ViewController>(identifier: "ViewController")
 
-      func viewController(_: Void = ()) -> ViewController? {
+      public func viewController(_: Void = ()) -> ViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: viewController)
       }
 
-      static func validate() throws {
+      public static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
         if _R.storyboard.main().viewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'viewController' could not be loaded from storyboard 'Main' as 'ViewController'.") }
