@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9BC11AA389143B993A078E4C /* Pods_RedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD088395D2CE46F982FBAC0 /* Pods_RedModule.framework */; };
 		F403711724F97D3100659BB4 /* RedStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = F403711624F97D3100659BB4 /* RedStrings.strings */; };
+		F43759C924FE818400C25272 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43759C824FE818400C25272 /* R.generated.swift */; };
 		F456897F24F9A9910075D9DD /* Red.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F456897E24F9A9910075D9DD /* Red.storyboard */; };
 		F471179C24F852AB000A2162 /* RedModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F471179224F852AB000A2162 /* RedModule.framework */; };
 		F47117A124F852AB000A2162 /* RedModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47117A024F852AB000A2162 /* RedModuleTests.swift */; };
@@ -30,6 +31,7 @@
 		2CD088395D2CE46F982FBAC0 /* Pods_RedModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EFF757E8D026C776D7447D /* Pods-RedModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedModule.release.xcconfig"; path = "Target Support Files/Pods-RedModule/Pods-RedModule.release.xcconfig"; sourceTree = "<group>"; };
 		F403711624F97D3100659BB4 /* RedStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = RedStrings.strings; sourceTree = "<group>"; };
+		F43759C824FE818400C25272 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F456897E24F9A9910075D9DD /* Red.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Red.storyboard; sourceTree = "<group>"; };
 		F471179224F852AB000A2162 /* RedModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F471179524F852AB000A2162 /* RedModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedModule.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		F471179424F852AB000A2162 /* RedModule */ = {
 			isa = PBXGroup;
 			children = (
+				F43759C824FE818400C25272 /* R.generated.swift */,
 				F456897E24F9A9910075D9DD /* Red.storyboard */,
 				F471179524F852AB000A2162 /* RedModule.h */,
 				F471179624F852AB000A2162 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildConfigurationList = F47117A624F852AB000A2162 /* Build configuration list for PBXNativeTarget "RedModule" */;
 			buildPhases = (
 				44F686618A98811C71E7E5A2 /* [CP] Check Pods Manifest.lock */,
+				F43759C724FE815000C25272 /* RSwift */,
 				F471178D24F852AB000A2162 /* Headers */,
 				F471178E24F852AB000A2162 /* Sources */,
 				F471178F24F852AB000A2162 /* Frameworks */,
@@ -251,6 +255,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F43759C724FE815000C25272 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate --accessLevel public \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47117B424F8543E000A2162 /* RedViewController.swift in Sources */,
+				F43759C924FE818400C25272 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

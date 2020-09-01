@@ -13,6 +13,7 @@ public class RedViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     public override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.text = R.string.redStrings.red()
     }
 
     public static func instanceFromStoryBoard() -> RedViewController {

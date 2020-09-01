@@ -13,6 +13,7 @@ public class BlueViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     public override func viewDidLoad() {
         super.viewDidLoad()
+        titleLabel.text = R.string.blueStrings.blue()
     }
 
     public static func instanceFromStoryBoard() -> BlueViewController {
